@@ -1,4 +1,5 @@
 # realtime chat app without using pusher
+![alt text](https://s2.gifyu.com/images/chat.gif)
 
 Nowadays Realtime something required in your application.
 so i decided to create a small chat application one using laravel vuejs and laravel-echo-server .
