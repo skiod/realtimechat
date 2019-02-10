@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,9 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+      
         return view('home');
     }
 
+    public function cccv(){
+        $val = 1;
+        return view('welcome')->with('val',$val);
+    }
 
     public function sendMsg(Request $request){
             broadcast(new \App\Events\SendMessage(auth()->user(),$request['msg']));

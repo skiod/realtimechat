@@ -1,11 +1,12 @@
 <?php
 
-Route::get('/', function () {
-    return redirect()->route('login');
-});
+Route::get('/','HomeController@cccv');
 
 Route::post('/send','HomeController@sendMsg');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/cc','HomeController@cccv');
+
 
 Auth::routes();

@@ -72,6 +72,7 @@
     </script>
     </head>
     <body>
-       
+        <a href="/prefferdShop/{{$val}}">cc</a>
+        
     </body>
 </html>
